@@ -1,0 +1,200 @@
+﻿#include "McDemo.h"
+
+#include "TestSceneSH.h"
+#include "TestSceneMJ.h"
+#include "TestSceneGY.h"
+#include "TestBattleScene.h"
+
+#include "BattleScene.h"
+
+#include "../Engine/SceneSystem.h"
+#include "../RenderEngine/D2DTextureSystem.h"
+#include "../Engine/Macro.h"
+#include "EffectManager.h"
+
+#include "Elements.h"
+
+using namespace McCol;
+
+McDemo::McDemo()
+{
+}
+
+McDemo::~McDemo()
+{
+}
+
+HRESULT McDemo::Initialize(HINSTANCE hInst, const char* appName)
+{
+	Mengine::Initialize(hInst, appName);
+
+	// EffectManager Init
+	m_EffectManager = new EffectManager;
+	m_EffectManager->Initialize();
+
+	D2DTextureSystem* TextureSystem = D2DTextureSystem::GetInstance();
+
+	//TestSceneSH* testSH = new TestSceneSH;
+	//m_SceneSystem->AddScene(testSH);
+	//EventSystem::GetInstance()->PublishEvent(L"CHANGE_SCENE", std::wstring(L"상학이의 테스트 씬"));
+
+	//TestSceneSH* testSH = new TestSceneSH;
+	//m_SceneSystem->AddScene(testSH);
+	//EventSystem::GetInstance()->PublishEvent(L"CHANGE_SCENE", std::wstring(L"상학이의 테스트 씬"));
+
+	BattleScene* testBattle = new BattleScene;
+	m_SceneSystem->AddScene(testBattle);
+	EventSystem::GetInstance()->PublishEvent(L"CHANGE_SCENE", std::wstring(L"Battle Scene"));
+
+	std::vector<CharacterType> typeArrange;
+	typeArrange.push_back(CharacterType::PLAYER);
+	typeArrange.push_back(CharacterType::WEREWOLF);
+	typeArrange.push_back(CharacterType::GOLEM);
+	typeArrange.push_back(CharacterType::FANATIC);
+	typeArrange.push_back(CharacterType::STALKER);
+	EventSystem::GetInstance()->PublishEvent(L"SET_MONSTER", typeArrange);
+
+
+	//TestSceneMJ* testMJ = new TestSceneMJ;
+	//m_SceneSystem->AddScene(testMJ);
+	//EventSystem::GetInstance()->PublishEvent(L"CHANGE_SCENE", std::wstring(L"민정이의 테스트 씬"));
+
+<<<<<<< .mine
+	TestSceneGY* testGY = new TestSceneGY;
+	m_SceneSystem->AddScene(testGY);
+	m_SceneSystem->ChangeScene(L"근영이의 테스트 씬");
+||||||| .r3292
+	//TestSceneGY* testGY = new TestSceneGY;
+	//m_SceneSystem->AddScene(testGY);
+	//m_SceneSystem->ChangeScene(L"근영이의 테스트 씬");
+=======
+	//TestBattleScene* testBattleScene = new TestBattleScene;
+	//m_SceneSystem->AddScene(testBattleScene);
+	//EventSystem::GetInstance()->PublishEvent(L"CHANGE_SCENE", std::wstring(L"UI 테스트용 배틀 씬"));
+>>>>>>> .r3604
+
+	/*TestSceneGY* testGY = new TestSceneGY;
+	m_SceneSystem->AddScene(testGY);
+	m_SceneSystem->ChangeScene(L"근영이의 테스트 씬");*/
+
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_PC_Shoot.png", L"사격");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_PC_Evasion.png", L"회피");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_PC_KnockDown.png", L"다리 걸기");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_PC_Spray.png", L"난사");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_PC_Snipe.png", L"저격");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_PC_Flash.png", L"플래쉬뱅");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_PC_fever.png", L"피버 타임");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_PC_WeakPoint.png", L"빈틈 포착");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_PC_DevilBullet.png", L"마탄의 사수");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_PC_Blast.png", L"아케인 블래스트");
+
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_ColdHug.png", L"차가운 포옹");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_Bite.png", L"깨물기");
+
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_Wildness.png", L"야성 해방");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_NoMercy.png", L"무자비");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_Trample.png", L"저돌맹진");
+
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_InevableFear.png", L"필연적인 공포");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_Chasing.png", L"끝없는 추적");
+
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_singasong.png", L"멸망을 부르는 노래");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_Bless.png", L"공허의 가호");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_Punishment.png", L"징벌");
+
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_TimePulse.png", L"시공의 파동");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_Overload.png", L"엔진 과부하");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_Terminate.png", L"말살");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Play_Mon_Gearchange.png", L"기어 체인지");
+
+
+	//temp
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Acc.png", L"시간 가속");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Blossom.png", L"가능성 개화");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Cheat.png", L"세계 속이기");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Check.png", L"체크메이트");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Cronos.png", L"고대의 회중시계");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Cut.png", L"운명 절단");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Dejavu.png", L"데자뷰");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Doom.png", L"파멸의 예언");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Dople.png", L"도플갱어");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Expan.png", L"공간 팽창");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Foresight.png", L"미래 예지");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Gamble.png", L"야바위");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_History.png", L"역사가 내리는 일격");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Hysteria.png", L"대혼란");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Isolation.png", L"차원 격리");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Loop.png", L"재귀");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Quantum.png", L"양자 얽힘");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Secret.png", L"비밀의 힘");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_SeeThrough.png", L"간파");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Spellbreak.png", L"스펠 브레이크");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Timestop.png", L"초침 멈추기");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Unavoid.png", L"숨을 수 없는 숙명");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Undo.png", L"원상 복귀");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Weakpoint.png", L"치명");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Weakpoint.png", L"새로운 비전");
+	TextureSystem->LoadTexture(L"../Resource/card_illust/Fate_Weakpoint.png", L"미래로부터 소환");
+
+	return S_OK;
+}
+
+void McDemo::Finalize()
+{
+	m_EffectManager->Finalize();
+	SAFE_DELETE(m_EffectManager)
+
+	Mengine::Finalize();
+}
+
+void McDemo::UpdateAll(const float& deltaTime)
+{
+	Mengine::UpdateAll(deltaTime);
+}
+
+void McDemo::RenderAll()
+{
+	Mengine::RenderAll();
+}
+
+void PlaceInCenterOfScreen(HWND window, DWORD style, DWORD exStyle)
+{
+	int screenWidth = GetSystemMetrics(SM_CXSCREEN);
+	int screenHeight = GetSystemMetrics(SM_CYSCREEN);
+
+	RECT clientRect;
+	GetClientRect(window, &clientRect);
+
+	int clientWidth = clientRect.right - clientRect.left;
+	int clientHeight = clientRect.bottom - clientRect.top;
+
+	SetWindowPos(window, NULL,
+		screenWidth / 2 - clientWidth / 2,
+		screenHeight / 2 - clientHeight / 2,
+		clientWidth, clientHeight, 0
+	);
+}
+
+LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
+{
+	HDC			hdc;
+	PAINTSTRUCT ps;
+
+	switch (message)
+	{
+	case WM_CREATE:
+		PlaceInCenterOfScreen(hWnd, WS_OVERLAPPEDWINDOW, WS_EX_APPWINDOW | WS_EX_WINDOWEDGE);
+		break;
+
+	case WM_PAINT:
+		hdc = BeginPaint(hWnd, &ps);
+		EndPaint(hWnd, &ps);
+		break;
+
+	case WM_DESTROY:
+		PostQuitMessage(0);
+		break;
+	}
+
+	return DefWindowProc(hWnd, message, wParam, lParam);
+}

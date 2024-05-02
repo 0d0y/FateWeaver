@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Scene">
+      <UniqueIdentifier>{8b5be854-b023-4291-a834-7e4febd1cce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\MJ">
+      <UniqueIdentifier>{72161f80-4a61-4477-aa8d-d3e33431897f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH">
+      <UniqueIdentifier>{c827b1c1-39aa-479b-b88d-3a7240a2fd46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY">
+      <UniqueIdentifier>{038a49aa-8b20-493b-93aa-f0c4098d267a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\TempGO">
+      <UniqueIdentifier>{df6b61f5-f23e-4ab2-91c0-c2604b32e287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card">
+      <UniqueIdentifier>{68a99714-e721-4f8d-8165-c170f4a69dc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent">
+      <UniqueIdentifier>{ff191fea-80c4-4730-8202-b2ad471ea7bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\FateCard">
+      <UniqueIdentifier>{12b6c089-a266-4b57-a539-9284507a9d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\Chararcter">
+      <UniqueIdentifier>{ddf48ddd-cacd-4521-bca6-b6b02f1820e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\InformationPart">
+      <UniqueIdentifier>{de0cb35d-bdeb-46bd-bd3d-3f3fca37f7d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\FunctionPart">
+      <UniqueIdentifier>{45284e7b-774b-4de7-87aa-33f4ce210fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\FunctionPart\ValueModification">
+      <UniqueIdentifier>{a308a03a-a5ac-4f38-965a-d866eb71cf6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\FunctionPart\DestinationModification">
+      <UniqueIdentifier>{21b1d453-0330-46f7-bbb6-ca0812c4cf86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\InformationPart\AttributeParts">
+      <UniqueIdentifier>{d3aa480d-ef16-45fe-b94e-6698b0c715be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\StateManager">
+      <UniqueIdentifier>{45ebf2ff-356c-4897-91e7-8081f436e985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\FunctionPart\TypeModification">
+      <UniqueIdentifier>{42d35af3-2b26-4e2d-9ab3-f814ccba47c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\FunctionPart\ParadoxModificition">
+      <UniqueIdentifier>{5de73e9a-b434-4ba8-a0b1-fdb6da99bbef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\FunctionPart\DrawCardComponent">
+      <UniqueIdentifier>{23dd287f-7abe-43df-9f82-e27b8dfa2a68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\BattleScene">
+      <UniqueIdentifier>{46c8f05e-0134-4fbf-b3c4-7c42ad6e24a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\BattleScene\CardTrigger">
+      <UniqueIdentifier>{47994160-9ce0-451c-b861-8327e3c8677d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\EffectManager">
+      <UniqueIdentifier>{c7102288-bd37-4cb8-9956-7254e6082063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\GameManager">
+      <UniqueIdentifier>{38786436-bdee-4492-a3e4-ec10ac00a0f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Deck">
+      <UniqueIdentifier>{7982980b-5398-4b16-b95c-6d12e90aaf6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\FunctionPart\PlayFromDeckComponent">
+      <UniqueIdentifier>{a66729ed-631e-438e-bb61-6db2c3ba79bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\FunctionPart\PlayFromDiscardComponent">
+      <UniqueIdentifier>{ce0245f7-35dc-4107-b8f0-9528e7359ef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\FunctionPart\SortDeckComponent">
+      <UniqueIdentifier>{537e5c1f-1eff-4095-80cc-5037ba0df874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\Chararcter\Player">
+      <UniqueIdentifier>{49282ba5-62d1-428a-b703-9fa1c0bf30ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\Chararcter\Monster">
+      <UniqueIdentifier>{2f6cc7da-f4fd-4450-b61c-f1907be6c658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\PlayCard">
+      <UniqueIdentifier>{d231dc96-862c-4584-ba04-24dd8cf828c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\InformationPart\StateParts">
+      <UniqueIdentifier>{3bf8cf7a-24af-4de4-bf79-de6d9105bf66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\BattleScene\Future">
+      <UniqueIdentifier>{79691717-5566-499c-878b-e4295784c26a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardFactory">
+      <UniqueIdentifier>{fe881f25-06ee-4a7b-b9ef-8bdc86c102ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\FunctionPart\SetCardComponent">
+      <UniqueIdentifier>{4c303319-6dfc-4871-988a-77fbce84609c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\FunctionPart\AllValueModification">
+      <UniqueIdentifier>{c0980642-d736-4912-a9a0-084f7716764d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\FunctionPart\OperationModification">
+      <UniqueIdentifier>{0872a2ec-14d9-4de0-a373-7908d8c07f7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\BattleScene\Hand">
+      <UniqueIdentifier>{e8f2650e-cac9-41cc-a40f-5e2956168c9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\MJ\CardTexture">
+      <UniqueIdentifier>{3df5df19-f1fb-4b80-a8c7-70cb9efe5d27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Mouse">
+      <UniqueIdentifier>{e82d9005-b0aa-406a-9067-a38b1ba26709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\GY\Card\CardComponent\InformationPart\KeywardParts">
+      <UniqueIdentifier>{e7a9f5d9-1a7b-412a-ab7e-1b3cbb1673d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\EffectManager\Effect">
+      <UniqueIdentifier>{2dc22ac1-be25-44aa-b02e-ee520d47d538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\Chararcter\Monster\Zombie">
+      <UniqueIdentifier>{705410a0-4548-46fd-b6e2-044997def193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\Chararcter\Monster\Fanatic">
+      <UniqueIdentifier>{7b900130-fcb5-422a-8857-a3f55d6db705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\Chararcter\Monster\Werewolf">
+      <UniqueIdentifier>{833c9814-eb03-48de-a325-245eb40318dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\Chararcter\Monster\Stalker">
+      <UniqueIdentifier>{37e41b94-eced-4468-9350-b956a7b0f4f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\Chararcter\Monster\Golem">
+      <UniqueIdentifier>{aed3cf4e-6c6d-4f81-8cae-fdb384358d2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\MJ\StateIconManager">
+      <UniqueIdentifier>{853ae3be-1eb8-4cdd-aedd-4266a6b59103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\MJ\Scene">
+      <UniqueIdentifier>{8ed1410f-c9f3-4184-bd4c-0cfcf6e40181}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\MJ\HpRenderer">
+      <UniqueIdentifier>{cfb83156-623c-4435-859e-de34920188de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\SH\EndingScene">
+      <UniqueIdentifier>{74d064a2-170d-4b7f-ba85-da71dde832d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestSceneSH.h">
+      <Filter>소스 파일\Scene\SH</Filter>
+    </ClInclude>
+    <ClInclude Include="TestSceneGY.h">
+      <Filter>소스 파일\Scene\GY</Filter>
+    </ClInclude>
+    <ClInclude Include="TempGO.h">
+      <Filter>소스 파일\Scene\GY\TempGO</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>소스 파일\Scene\GY\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="FateCard.h">
+      <Filter>소스 파일\Scene\GY\Card\FateCard</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeParts.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\InformationPart\AttributeParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>소스 파일\Scene\SH\Chararcter</Filter>
+    </ClInclude>
+    <ClInclude Include="StateManager.h">
+      <Filter>소스 파일\Scene\SH\StateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CardFuncComponent.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="DestinationMod.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\DestinationModification</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeMod.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\TypeModification</Filter>
+    </ClInclude>
+    <ClInclude Include="ParadoxMod.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\ParadoxModificition</Filter>
+    </ClInclude>
+    <ClInclude Include="CardTrigger.h">
+      <Filter>소스 파일\Scene\SH\BattleScene\CardTrigger</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleScene.h">
+      <Filter>소스 파일\Scene\SH\BattleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectManager.h">
+      <Filter>소스 파일\Scene\SH\EffectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>소스 파일\Scene\SH\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Deck.h">
+      <Filter>소스 파일\Scene\GY\Deck</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayFromDeck.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\PlayFromDeckComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayFromDiscard.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\PlayFromDiscardComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SortDeck.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\SortDeckComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>소스 파일\Scene\SH\Chararcter\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCard.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\DrawCardComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayCard.h">
+      <Filter>소스 파일\Scene\GY\Card\PlayCard</Filter>
+    </ClInclude>
+    <ClInclude Include="SetCard.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\SetCardComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="StateParts.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\InformationPart\StateParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Future.h">
+      <Filter>소스 파일\Scene\SH\BattleScene\Future</Filter>
+    </ClInclude>
+    <ClInclude Include="CardFactory.h">
+      <Filter>소스 파일\Scene\GY\Card\CardFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AllValueMod.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\AllValueModification</Filter>
+    </ClInclude>
+    <ClInclude Include="OperationMod.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\OperationModification</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueMod.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\ValueModification</Filter>
+    </ClInclude>
+    <ClInclude Include="Hand.h">
+      <Filter>소스 파일\Scene\SH\BattleScene\Hand</Filter>
+    </ClInclude>
+    <ClInclude Include="CardTexture.h">
+      <Filter>소스 파일\Scene\MJ\CardTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>소스 파일\Scene\GY\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="CardPartsComponent.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="KeywordParts.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\InformationPart\KeywardParts</Filter>
+    </ClInclude>
+    <ClInclude Include="McDemo.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TestBattleScene.h">
+      <Filter>소스 파일\Scene\MJ</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>소스 파일\Scene\SH\EffectManager\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Zombie.h">
+      <Filter>소스 파일\Scene\SH\Chararcter\Monster\Zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="Werewolf.h">
+      <Filter>소스 파일\Scene\SH\Chararcter\Monster\Werewolf</Filter>
+    </ClInclude>
+    <ClInclude Include="Stalker.h">
+      <Filter>소스 파일\Scene\SH\Chararcter\Monster\Stalker</Filter>
+    </ClInclude>
+    <ClInclude Include="Golem.h">
+      <Filter>소스 파일\Scene\SH\Chararcter\Monster\Golem</Filter>
+    </ClInclude>
+    <ClInclude Include="Fanatic.h">
+      <Filter>소스 파일\Scene\SH\Chararcter\Monster\Fanatic</Filter>
+    </ClInclude>
+    <ClInclude Include="StateIconManager.h">
+      <Filter>소스 파일\Scene\MJ\StateIconManager</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="TestBattleScene.h">
+      <Filter>소스 파일\Scene\MJ\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TestMain.h">
+      <Filter>소스 파일\Scene\MJ\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TestMap.h">
+      <Filter>소스 파일\Scene\MJ\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="RewardScene.h">
+      <Filter>소스 파일\Scene\MJ\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="HpRenderer.h">
+      <Filter>소스 파일\Scene\MJ\HpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="TestSceneMJ.h">
+      <Filter>소스 파일\Scene\MJ</Filter>
+    </ClInclude>
+    <ClInclude Include="EndingScene.h">
+      <Filter>소스 파일\Scene\SH\EndingScene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="McDemo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSceneSH.cpp">
+      <Filter>소스 파일\Scene\SH</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSceneGY.cpp">
+      <Filter>소스 파일\Scene\GY</Filter>
+    </ClCompile>
+    <ClCompile Include="TempGO.cpp">
+      <Filter>소스 파일\Scene\GY\TempGO</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>소스 파일\Scene\GY\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="FateCard.cpp">
+      <Filter>소스 파일\Scene\GY\Card\FateCard</Filter>
+    </ClCompile>
+    <ClCompile Include="ValueMod.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\ValueModification</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>소스 파일\Scene\SH\Chararcter</Filter>
+    </ClCompile>
+    <ClCompile Include="StateManager.cpp">
+      <Filter>소스 파일\Scene\SH\StateManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CardFuncComponent.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="DestinationMod.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\DestinationModification</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeMod.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\TypeModification</Filter>
+    </ClCompile>
+    <ClCompile Include="ParadoxMod.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\ParadoxModificition</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleScene.cpp">
+      <Filter>소스 파일\Scene\SH\BattleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="CardTrigger.cpp">
+      <Filter>소스 파일\Scene\SH\BattleScene\CardTrigger</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectManager.cpp">
+      <Filter>소스 파일\Scene\SH\EffectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>소스 파일\Scene\SH\GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Deck.cpp">
+      <Filter>소스 파일\Scene\GY\Deck</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayFromDeck.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\PlayFromDeckComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayFromDiscard.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\PlayFromDiscardComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SortDeck.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\SortDeckComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\Scene\SH\Chararcter\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCard.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\DrawCardComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayCard.cpp">
+      <Filter>소스 파일\Scene\GY\Card\PlayCard</Filter>
+    </ClCompile>
+    <ClCompile Include="SetCard.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\SetCardComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="CardComponentHeader.h">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="StateParts.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\InformationPart\StateParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Future.cpp">
+      <Filter>소스 파일\Scene\SH\BattleScene\Future</Filter>
+    </ClCompile>
+    <ClCompile Include="CardFactory.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AllValueMod.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\AllValueModification</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationMod.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\FunctionPart\OperationModification</Filter>
+    </ClCompile>
+    <ClCompile Include="Hand.cpp">
+      <Filter>소스 파일\Scene\SH\BattleScene\Hand</Filter>
+    </ClCompile>
+    <ClCompile Include="CardTexture.cpp">
+      <Filter>소스 파일\Scene\MJ\CardTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>소스 파일\Scene\GY\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="CardPartsComponent.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="KeywordParts.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\InformationPart\KeywardParts</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBattleScene.cpp">
+      <Filter>소스 파일\Scene\MJ</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>소스 파일\Scene\SH\EffectManager\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Zombie.cpp">
+      <Filter>소스 파일\Scene\SH\Chararcter\Monster\Zombie</Filter>
+    </ClCompile>
+    <ClCompile Include="Werewolf.cpp">
+      <Filter>소스 파일\Scene\SH\Chararcter\Monster\Werewolf</Filter>
+    </ClCompile>
+    <ClCompile Include="Stalker.cpp">
+      <Filter>소스 파일\Scene\SH\Chararcter\Monster\Stalker</Filter>
+    </ClCompile>
+    <ClCompile Include="Golem.cpp">
+      <Filter>소스 파일\Scene\SH\Chararcter\Monster\Golem</Filter>
+    </ClCompile>
+    <ClCompile Include="Fanatic.cpp">
+      <Filter>소스 파일\Scene\SH\Chararcter\Monster\Fanatic</Filter>
+    </ClCompile>
+    <ClCompile Include="StateIconManager.cpp">
+      <Filter>소스 파일\Scene\MJ\StateIconManager</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBattleScene.cpp">
+      <Filter>소스 파일\Scene\MJ\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMain.cpp">
+      <Filter>소스 파일\Scene\MJ\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMap.cpp">
+      <Filter>소스 파일\Scene\MJ\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="RewardScene.cpp">
+      <Filter>소스 파일\Scene\MJ\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="HpRenderer.cpp">
+      <Filter>소스 파일\Scene\MJ\HpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeParts.cpp">
+      <Filter>소스 파일\Scene\GY\Card\CardComponent\InformationPart\AttributeParts</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSceneMJ.cpp">
+      <Filter>소스 파일\Scene\MJ</Filter>
+    </ClCompile>
+    <ClCompile Include="EndingScene.cpp">
+      <Filter>소스 파일\Scene\SH\EndingScene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="McDemo.rc" />
+  </ItemGroup>
+</Project>

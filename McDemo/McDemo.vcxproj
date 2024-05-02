@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{29418195-d8dd-4d46-896d-15d7ff1900ea}</ProjectGuid>
+    <RootNamespace>McDemo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\bin\McDebug\</OutDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+    <IncludePath>$(SolutionDir)\extern\fmod\inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\bin\McRelease\</OutDir>
+    <IncludePath>$(SolutionDir)\extern\fmod\inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AllValueMod.h" />
+    <ClInclude Include="AttributeParts.h" />
+    <ClInclude Include="BattleScene.h" />
+    <ClInclude Include="CardFactory.h" />
+    <ClInclude Include="CardPartsComponent.h" />
+    <ClInclude Include="CardTexture.h" />
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="EndingScene.h" />
+    <ClInclude Include="Fanatic.h" />
+    <ClInclude Include="Golem.h" />
+    <ClInclude Include="Hand.h" />
+    <ClInclude Include="HpRenderer.h" />
+    <ClInclude Include="RewardScene.h" />
+    <ClInclude Include="StateIconManager.h" />
+    <ClInclude Include="KeywordParts.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="OperationMod.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Stalker.h" />
+    <ClInclude Include="StateParts.h" />
+    <ClInclude Include="CardTrigger.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="Deck.h" />
+    <ClInclude Include="DrawCard.h" />
+    <ClInclude Include="EffectManager.h" />
+    <ClInclude Include="Elements.h" />
+    <ClInclude Include="Future.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="ParadoxMod.h" />
+    <ClInclude Include="PlayFromDeck.h" />
+    <ClInclude Include="PlayFromDiscard.h" />
+    <ClInclude Include="SetCard.h" />
+    <ClInclude Include="SortDeck.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="StateManager.h" />
+    <ClInclude Include="DestinationMod.h" />
+    <ClInclude Include="TestBattleScene.h" />
+    <ClInclude Include="TestMain.h" />
+    <ClInclude Include="TestMap.h" />
+    <ClInclude Include="TypeMod.h" />
+    <ClInclude Include="ValueMod.h" />
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="CardFuncComponent.h" />
+    <ClInclude Include="FateCard.h" />
+    <ClInclude Include="McDemo.h" />
+    <ClInclude Include="PlayCard.h" />
+    <ClInclude Include="TempGO.h" />
+    <ClInclude Include="TestSceneGY.h" />
+    <ClInclude Include="TestSceneMJ.h" />
+    <ClInclude Include="TestSceneSH.h" />
+    <ClInclude Include="Werewolf.h" />
+    <ClInclude Include="Zombie.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AllValueMod.cpp" />
+    <ClCompile Include="AttributeParts.cpp" />
+    <ClCompile Include="BattleScene.cpp" />
+    <ClCompile Include="CardFactory.cpp" />
+    <ClCompile Include="CardPartsComponent.cpp" />
+    <ClCompile Include="CardTexture.cpp" />
+    <ClCompile Include="Effect.cpp" />
+    <ClCompile Include="EndingScene.cpp" />
+    <ClCompile Include="Fanatic.cpp" />
+    <ClCompile Include="Golem.cpp" />
+    <ClCompile Include="Hand.cpp" />
+    <ClCompile Include="HpRenderer.cpp" />
+    <ClCompile Include="RewardScene.cpp" />
+    <ClCompile Include="StateIconManager.cpp" />
+    <ClCompile Include="KeywordParts.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="OperationMod.cpp" />
+    <ClCompile Include="Stalker.cpp" />
+    <ClCompile Include="StateParts.cpp" />
+    <ClCompile Include="CardComponentHeader.h" />
+    <ClCompile Include="CardTrigger.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="Deck.cpp" />
+    <ClCompile Include="DrawCard.cpp" />
+    <ClCompile Include="Future.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="ParadoxMod.cpp" />
+    <ClCompile Include="EffectManager.cpp" />
+    <ClCompile Include="PlayFromDeck.cpp" />
+    <ClCompile Include="PlayFromDiscard.cpp" />
+    <ClCompile Include="SetCard.cpp" />
+    <ClCompile Include="SortDeck.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="StateManager.cpp" />
+    <ClCompile Include="DestinationMod.cpp" />
+    <ClCompile Include="TestBattleScene.cpp" />
+    <ClCompile Include="TestMain.cpp" />
+    <ClCompile Include="TestMap.cpp" />
+    <ClCompile Include="TypeMod.cpp" />
+    <ClCompile Include="ValueMod.cpp" />
+    <ClCompile Include="Card.cpp" />
+    <ClCompile Include="CardFuncComponent.cpp" />
+    <ClCompile Include="FateCard.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="McDemo.cpp" />
+    <ClCompile Include="PlayCard.cpp" />
+    <ClCompile Include="TempGO.cpp" />
+    <ClCompile Include="TestSceneGY.cpp" />
+    <ClCompile Include="TestSceneMJ.cpp" />
+    <ClCompile Include="TestSceneSH.cpp" />
+    <ClCompile Include="Werewolf.cpp" />
+    <ClCompile Include="Zombie.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.vcxproj">
+      <Project>{06fe455a-5f73-4c0f-ba92-be996eba72fc}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="McDemo.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

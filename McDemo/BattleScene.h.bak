@@ -1,0 +1,141 @@
+﻿#pragma once
+#include "../Engine/Scene.h"
+
+#include "../Engine/Vector2.h"
+#include "Elements.h"
+
+#include <thread>
+#include <chrono>
+#include <future>
+
+
+
+namespace McCol
+{
+	class Camera;
+}
+
+enum class BattleProgress
+{
+	DRAW_FATECARD,
+	DRAW_PLAYCARD,
+	SHOW_PLAYCARD,
+	USE_FATECARD,
+
+	DRAW_FUTURE,
+	APPLY_PLAYCARD,
+	ATTACK_CHRACTER,
+};
+
+class PlayCard;
+class CardTrigger;
+class Character;
+class PlayCard;
+class Deck;
+class Hand;
+class Future;
+class Mouse;
+
+class BattleScene : public McCol::Scene
+{
+public:
+	BattleScene();
+	~BattleScene() override;
+
+private:
+	BattleProgress m_Progress;
+	float m_DelayedTime;
+
+	McCol::GameObject* m_Camera;
+	Mouse* m_Mouse;
+
+	std::vector<Character*> m_CharactersInField;	// 0 : 플레이어, 1 ~ : 몬스터
+	std::vector<CharacterType> m_TypeArrange;
+	PlayCard* m_ClickedCard;
+
+	/*Card Container*/
+	Hand* m_Hand;
+
+	// Future
+	Future* m_Future;
+	PlayCard* m_ExecutedPlayCard;
+	std::map<Destination, CardInfo> m_LastCardInfo;
+
+	Deck* m_PlayerPlayDeck;
+	Deck* m_PlayerFateDeck;
+	std::vector<Deck*> m_MonsterPlayDecks;
+
+public:
+	void Enter() override;
+	void Exit() override;
+
+	void Update(const float& deltaTime) override;
+
+private:
+	void MakeMonster(CharacterType type, int index);
+	McCol::Vector2 GetIndexPosition(size_t index);
+
+
+
+	// Event Func
+	void SetMonster(std::any monsters);
+	//void SetArtifact(std::any artifacts);
+
+	//void DrawPlayCard(std::any count);
+	//void DrawFateCard(std::any count);
+	//void DrawMonsterCard(std::any count);
+
+
+	/*Battle Progress*/
+	void DrawFateCards();
+	void DrawPlayCards();
+	void ShowPlayCards();
+	void UseFateCards();
+	void ExecuteFuture();
+
+
+	//void Play();
+<<<<<<< .mine
+||||||| .r4244
+	void ExecuteFuture();
+=======
+
+	//Future
+	void DrawFuture();
+	void ApplyPlayCard();
+	void AttackCharacter();
+>>>>>>> .r4380
+	//bool CheckExitCondition();
+
+	bool UpdateDelayTime(float t);
+
+};
+
+
+
+
+// 미래 영역
+// 플레이어 플레이 카드 덱 (뽑을, 버릴)
+// 몬스터 플레이 카드 덱 (뽑을, 버릴)
+
+// 플레이어 손패
+// 플레이어 운명 카드 덱 (뽑을, 버릴)
+
+// 게임 플레이 상황 (게임이 시작하며, 플레이어가 조작이 불가능한 상황)
+// 1. 플레이어 플레이 카드 덱, 몬스터 플레이 카드 덱에서 정해진 카드 수를 각각 뽑아서 뽑힌 플레이 카드 포인터 벡터에 담는다
+// 2. 뽑힌 카드 포인터 벡터를 미래 영역에 전달한다
+// 3. 미래 영역에서 정렬 기준에 맞게 정렬한다
+//	3.1. 정렬 기준에 따라 순서대로 렌더링한다 (이건 좀 고생을 해야할 듯)
+// 4. 플레이어 운명 카드 덱에서 정해진 카드 수를 뽑아서 뽑힌 운명 카드 포인터 벡터에 담는다
+// 5. 뽑힌 카드 포인터 벡터를 손패에 전달한다
+// 6. 손패에서 렌더링한다
+
+// 게임 플레이 상황 (모든 카드 배치가 끝나고, 플레이어가 조작이 가능한 상황)
+// 1. 손패의 운명 카드 위에 마우스가 올라왔을 때
+//	1.1. 해당 카드의 렌더링을 후순위로 미룬 뒤 손패에서 조금 위로 올라오는 모습으로 렌더를 해준다
+// 2. 손패의 운명 카드를 클릭했을 때
+//	2.1. 해당 운명 카드가 상호작용 가능한 대상들
+
+
+// 게임 플레이 상황 (턴 종료 버튼을 누른 후, 플레이어가 조작이 불가능한 상황)
+// 미래 영역에서 플레이카드를 뽑아왔을 때 가운데로 뿅!
